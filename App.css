@@ -1,0 +1,378 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Nunito+Sans:wght@300&family=Poppins:wght@200;300&family=Roboto&family=Roboto+Serif:wght@300&family=Ubuntu:wght@300&display=swap");
+
+* {
+  font-family: "Fredoka", sans-serif;
+}
+#my-carousel,
+#my-carousel2 {
+  height: 395px;
+  width: 600px;
+  background-color: black;
+  flex-direction: row;
+  display: flex;
+  margin-left: 27.6%;
+  margin-top: 22.5px;
+  margin-bottom: 22.5px;
+  border-left: 5px solid whitesmoke;
+  /* border-bottom: 5px solid midnightblue;
+  border-top: 5px solid midnightblue;
+  border-right: 5px solid cornflowerblue; */
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+  padding-top: 25px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 7px;
+  font-family: cursive;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 45px;
+  padding-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 100px;
+}
+
+.content-wrapper {
+  /* display: inline-flex; */
+  /* flex-direction: row; */
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+.display-content {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+  margin: 18px;
+}
+
+.display-content img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.side-menu-wrapper {
+  width: 25%;
+  height: fit-content;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  overflow: hidden;
+  display: inline-block;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+}
+.products {
+  width: 75%;
+  height: fit-content;
+  overflow: hidden;
+  display: inline-block;
+  margin-left: 300px;
+}
+
+.side-menu-wrapper hr {
+  color: gray;
+}
+
+details,
+.side-menu-wrapper h5 {
+  text-align: left;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+details input {
+  margin-top: 10px;
+  width: 70%;
+  outline: none;
+  text-indent: 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.offers {
+  height: fit-content;
+  width: fit-content;
+  padding-top: 120px;
+  position: relative;
+}
+
+.display-offer,
+.display-sales {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 100px;
+  margin-left: 12px;
+}
+
+.display-offer img,
+.display-sales img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.buy-btn {
+  padding: 3px;
+  width: 60px;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.buy-btn:hover {
+  color: #069985;
+  border: 1px solid #069985;
+}
+
+.app-footer {
+  height: 330px;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+}
+
+#footer-items1,
+#footer-items2 {
+  height: 300px;
+  width: 200px;
+  overflow: hidden;
+  /* border: 1px solid green; */
+  margin-left: 15px;
+}
+
+#footer-items1 h5,
+#footer-items2 h5 {
+  margin-left: -30%;
+}
+
+#footer-items1 li,
+#footer-items2 li {
+  font-size: 14px;
+  text-align: left;
+  list-style-type: none;
+  line-height: 5vh;
+}
+
+.footer-links {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration-line: none;
+}
+
+.footer-links:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+h5 {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 12px;
+}
+
+#footer-items3,
+#footer-items4 {
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  margin-left: 15px;
+  text-align: left;
+}
+
+#footer-items4 span,
+p {
+  font-size: 12px;
+}
+
+#footer-items3 p {
+  font-size: 12px;
+  text-align: left;
+}
+
+.extra-page-wrapper {
+  height: fit-content;
+  width: 100%;
+  /* border: 1px solid red; */
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+.reusable-div{
+  height: 370px;
+  width: 550px;
+  display: inline-block;
+  margin: 30px;
+  border-radius: 20px;
+  padding-top: 120px;
+}
+
+.reusable-div img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 370px;
+  width: 550px;
+  border-radius: 20px;
+}
+
+.reusable-div h4{
+  font-size: 30px;
+  color: black;
+}
+
+a {
+  text-decoration-line: none;
+  color: gray;
+}
+
+.contact-wrapper{
+  text-align: left;
+}
+/* RESPONSIVENESS */
+
+/*Mobile phones: eg Samsung Galaxy, iPhone */
+
+@media screen and (max-width: 500px) {
+  .content-wrapper {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  .app-footer {
+    height: fit-content;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  #footer-items1,
+  #footer-items2 {
+    margin-bottom: 0px;
+  }
+
+  #footer-items3,
+  #footer-items4 {
+    margin-top: 0;
+  }
+  #my-carousel,
+  #my-carousel2 {
+    margin-left: 0px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h5 {
+    text-align: left;
+  }
+  .products {
+    margin-left: 50px;
+  }
+  .offers,
+  .offers h5 {
+    font-size: 12px;
+  }
+
+  .side-menu-wrapper {
+    width: fit-content;
+  }
+  details input {
+    width: fit-content;
+  }
+  .reusable-div{
+    width: 350px;
+    height: 250px;
+    margin: 0px;
+  }
+  .reusable-div img{
+    width: 350px;
+    height: 250px;
+  }
+
+  .reusable-div h4{
+    font-size: large;
+  }
+}
+
+/*Tablets: eg Galaxy Tab, Kindle, iPad */
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  h5 {
+    text-align: left;
+  }
+
+  #footer-items1,
+  #footer-items2 {
+    margin-bottom: 0px;
+  }
+  #footer-items3,
+  #footer-items4 {
+    margin-left: 10px;
+  }
+  #my-carousel,
+  #my-carousel2 {
+    margin-left: 0px;
+    width: 100%;
+    height: fit-content;
+  }
+  .content-wrapper {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  .app-footer {
+    height: fit-content;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+  }
+  #footer-items1 h5,
+  #footer-items2 h5 {
+    margin-left: 15%;
+  }
+  .products {
+    margin-left: 150px;
+  }
+  .offers,
+  .offers h5 {
+    font-size: 12px;
+  }
+
+  .side-menu-wrapper {
+    width: fit-content;
+  }
+  details input {
+    width: fit-content;
+  }
+}
